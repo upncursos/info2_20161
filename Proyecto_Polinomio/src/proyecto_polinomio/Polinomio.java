@@ -25,7 +25,15 @@ public class Polinomio {
         resultado = this.a*Math.pow(x,2) + this.b*Math.pow(x, 1) + this.c;
         return resultado;
     }
-    
+    public Polinomio sumar(Polinomio otro)
+    {
+       Polinomio resultante;
+       resultante = new Polinomio();
+       resultante.a = this.a + otro.a;
+       resultante.b = this.b + otro.b;
+       resultante.c = this.c + otro.c;
+       return resultante;        
+    }        
            
     
     

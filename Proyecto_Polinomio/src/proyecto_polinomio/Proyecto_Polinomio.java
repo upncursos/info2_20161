@@ -29,6 +29,10 @@ public class Proyecto_Polinomio {
         p2.c =2;
         
         y = p.sumar(p2);
+        System.out.println(y);
+        
+   
+        
         
        
     }
