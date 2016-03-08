@@ -49,6 +49,10 @@ public class Proyecto_Geometria {
         t.hallarPermitro();
         System.out.println(t);
         
+        String s = "AS";
+        int x;
+        x = Integer.parseInt(s);
+        System.out.println(x);
         
         
         
