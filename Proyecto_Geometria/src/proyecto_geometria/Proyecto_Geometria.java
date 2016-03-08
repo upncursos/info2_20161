@@ -27,6 +27,30 @@ public class Proyecto_Geometria {
         distancia = p1.hallarDistancia(p2);
         System.out.println("La distancia de "+p1+ " a "+p2+" es "+distancia);
         
+        Circulo c;
+        c = new Circulo();
+        c.radio = 5;
+        c.centro = p1;
+      
+        System.out.println(c);
+        
+        Triangulo t = new Triangulo();
+        t.vertice1 = new Punto();
+        t.vertice2 = new Punto();
+        t.vertice3 = new Punto();
+        
+        t.vertice1.x = -5;
+        t.vertice1.y = 0;
+        t.vertice2.x = 5;
+        t.vertice2.y = 0;
+        t.vertice3.x = 0;
+        t.vertice3.y = 2;
+        
+        t.hallarPermitro();
+        System.out.println(t);
+        
+        
+        
         
     }
     
