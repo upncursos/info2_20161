@@ -23,7 +23,8 @@ public class Proyecto_cartas {
         int x = c.obtenerValor();
         System.out.println(x);
                 
-        
+        String s = "6";
+        int w = Integer.parseInt(s);
         
     }
     
