@@ -15,7 +15,12 @@ public class Proyecto_Fraccionario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+     Fraccionario f;
+     f = new Fraccionario();
+     f.numerador = 2;
+     f.denominador = 3;
+        System.out.println(f);
+        
     }
     
 }
