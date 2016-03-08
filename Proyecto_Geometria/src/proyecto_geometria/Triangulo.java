@@ -29,6 +29,15 @@ public class Triangulo {
         perimetro= lado1+lado2+lado3;
         return perimetro;
     }
+    public double hallarArea()
+    {
+        double s = this.hallarPermitro()/2;
+        double a = this.vertice1.hallarDistancia(this.vertice2);
+        double b = this.vertice2.hallarDistancia(this.vertice3);
+        double c = this.vertice3.hallarDistancia(this.vertice1);
+        double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        return area;
+    }        
 
     
 }
