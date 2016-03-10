@@ -10,8 +10,8 @@ package proyecto_geometria;
  * @author user
  */
 public class Punto {
-    double x;
-    double y;
+    public double x;
+    public double y;
     
     double hallarDistancia(Punto otro)
     {
