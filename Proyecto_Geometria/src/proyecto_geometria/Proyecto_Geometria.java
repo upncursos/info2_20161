@@ -16,13 +16,22 @@ public class Proyecto_Geometria {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Punto p1, p2,p3;
-        double distancia;
-        p1 = new Punto();
-        p2 = new Punto(5,1);
-        p3 = new Punto(3);
-        System.out.println(p1);
-        System.out.println(p2);
+        Punto a, b,c;
+        
+        a = new Punto();
+        b = new Punto();
+        c = new Punto();
+        a.x=3;
+        a.y=4;
+        b = a;
+        b.x = b.x +2;
+        c = b;
+        c.x = c.x +1;
+        c.y = c.y -1;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        
         /*
         p1.x = -5;
         p1.y = 1;
