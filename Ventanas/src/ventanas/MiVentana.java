@@ -5,8 +5,10 @@
  */
 package ventanas;
 
+import java.awt.Button;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,23 +21,34 @@ import javax.swing.JTextField;
 public class MiVentana extends JFrame implements ActionListener{
     JLabel texto;
     JTextField caja;
-    JButton boton;
     public MiVentana()
     {
         
-        this.setSize(300, 300);
+        this.setSize(250, 300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
-        this.texto = new JLabel("Digite su nombre");
         this.caja = new JTextField();
-        this.boton = new JButton("Aceptar");
-        this.texto.setBounds(0, 0, 200, 50);
-        this.caja.setBounds(0,100,200,50);
-        this.boton.setBounds(0, 150, 200, 50);
-        this.add(this.caja);
-        this.add(this.boton);
-        this.add(this.texto);
-        this.boton.addActionListener(this);
+        this.caja.setBounds(0,0,200,50);
+        this.add(caja);
+        int x=50;
+        int y=50;
+        int ancho=50;
+        int alto=50;
+        String valores="741=8520963./*-+";
+        int k = 0;
+        for(int i = 0; i<=3;i++)
+        {
+            for(int j=0;j<=3;j++)
+            {
+                JButton boton = new JButton(""+valores.charAt(k));
+                boton.setBounds(i*x, j*y+50, ancho, alto);
+              
+                boton.addActionListener(this);
+                  this.add(boton);
+                   k++;
+            }    
+        }    
+        
         this.setVisible(true);
         
         
@@ -43,8 +56,8 @@ public class MiVentana extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        System.out.println("Botòn presionado");  
-        
+        System.out.println(ae.getActionCommand());
+     
     }
     
     
