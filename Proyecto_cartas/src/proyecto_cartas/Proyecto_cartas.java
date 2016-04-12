@@ -15,16 +15,7 @@ public class Proyecto_cartas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Carta c = new Carta();
-        c.valor="K";
-        c.palo="DIAMANTES";
-        System.out.println(c);
-        int x = c.obtenerValor();
-        System.out.println(x);
-                
-        String s = "6";
-        int w = Integer.parseInt(s);
+     Ventana ventana = new Ventana();
         
     }
     
