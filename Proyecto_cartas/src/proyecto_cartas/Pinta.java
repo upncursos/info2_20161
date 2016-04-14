@@ -9,16 +9,9 @@ package proyecto_cartas;
  *
  * @author user
  */
-public class Proyecto_cartas {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-      Ventana ventana = new Ventana();
-        
-        
-        
-    }
-    
+public class Pinta {
+    final static int TREBOLES =1;
+    final static int DIAMANTES=2;
+    final static int CORAZONES=3;
+    final static int PICAS=4;
 }

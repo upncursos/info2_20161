@@ -34,17 +34,15 @@ public class Ventana extends JFrame{
         InputStream is;
         is=Ventana.class.getResourceAsStream("cartas.png");
        
-        BufferedImage img,img2;
+        BufferedImage img;
         
         try {
-            int ancho = 79;
-            int alto = 123;
-            int fila=1;
-            int columna=4;
+       
             img = ImageIO.read(is);
-            img2 = img.getSubimage(0, 0, ancho, alto);
-            g.drawImage(img2, 50, 50, null);
-            
+            Carta c;
+            c = new Carta(5, Pinta.TREBOLES);
+            c.dibujar(g, img);
+            System.out.println(c);
             
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
