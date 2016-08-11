@@ -6,6 +6,7 @@
 package programa1;
 
 import java.util.Scanner;
+import java.util.Scanner;
 
 /**
  *
@@ -18,16 +19,31 @@ public class Programa1 {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        String x;
+        int num1,num2,suma;
+        x= "hola";
+        num1=0;
+        num2=0;
+        suma=0;
+        System.out.print("por favor ingresar 1 numero :"); 
+        num1 = entrada.nextInt();
+        System.out.print("por favor ingresar 2 numero :"); 
+        num2 = entrada.nextInt();
+        suma= num1+num2;
         
-        String x=entrada.next();
+          System.out.println("el resultado es : "+suma); 
         
-        if(x=="casa"){
+        
+        /*
+         x=entrada.next();
+        
+        if(x.equals("casa")){
             System.out.println("verdadero");     
         }
         else{
             System.out.println("falso");
         }
-        
+        */
 
         
     }
