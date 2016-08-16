@@ -17,15 +17,13 @@ public class JavaApplication54 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Punto p1,p2,p3;
-        p1 = new Punto();
-        p2 = new Punto();
-        p3 = new Punto();
-        p1.x=4;
-        p1.y=3;
-        System.out.println(p1);
-       
+        Circulo c1;
+        c1 = new Circulo();
+        c1.radio=5;
         
+        c1.centro.x=3;
+        c1.centro.y=4;
+        System.out.println(c1);
         
     }
     
