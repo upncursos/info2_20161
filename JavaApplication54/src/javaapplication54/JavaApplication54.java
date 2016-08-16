@@ -5,6 +5,7 @@
  */
 package javaapplication54;
 
+import ejemplo1.Ejemplo1;
 import java.util.Scanner;
 
 /**
@@ -20,10 +21,11 @@ public class JavaApplication54 {
         Circulo c1;
         c1 = new Circulo();
         c1.radio=5;
-        
+        c1.centro = new Punto();
         c1.centro.x=3;
         c1.centro.y=4;
         System.out.println(c1);
+        Ejemplo1 w;
         
     }
     
