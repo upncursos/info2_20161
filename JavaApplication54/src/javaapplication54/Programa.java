@@ -12,20 +12,24 @@ import java.util.Scanner;
  *
  * @author user
  */
-public class JavaApplication54 {
+public class Programa {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         Circulo c1;
+        Punto p1;
+        p1 = new Punto();
+        p1.x=3;
+        p1.y=5;
         c1 = new Circulo();
-        c1.radio=5;
-        c1.centro = new Punto();
-        c1.centro.x=3;
-        c1.centro.y=4;
+        c1.radio=4;
+        c1.centro=p1;
         System.out.println(c1);
-        Ejemplo1 w;
+        p1.x=7;
+        p1.y=2;
+        System.out.println(c1);
         
     }
     
